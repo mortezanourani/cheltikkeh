@@ -1,0 +1,8 @@
+/* HTML definitions */
+
+html, body{
+	margin: 0px;
+	padding: 0px;
+	outline: none;
+	direction: rtl;
+}

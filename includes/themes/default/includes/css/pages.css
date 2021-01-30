@@ -1,0 +1,644 @@
+
+/*
+// Forget Password Page Style -------------------------------------------
+*/
+.forgetpass{
+	direction: ltr;
+	padding: 5px 10px 0px 10px;
+	font: bold 22px mitra;
+	color: rgba(0, 100, 180, 1);
+}
+#frmrenewpass,
+.forgetpass #form{
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	margin: -150px;
+	padding-bottom: 25px;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	border-radius: 7px;
+	background-color: rgba(210, 230, 255, 0.8);
+	box-shadow: 0px 0px 5px rgba(0, 30, 60, 1);
+	z-index: 99999;
+}
+#frmrenewpass{
+	height: 200px;
+	margin-top: -100px;
+}
+#frmrenewpass #title,
+.forgetpass #form  #title{
+	padding: 10px;
+	background-color: rgba(255, 255, 255, 1);
+	border-radius: 7px 7px 0px 0px;
+	font: bold 20px titr, mitra, nazanin;
+	color: white;
+	text-shadow: 0px 0px 3px rgba(0, 30, 60, 1);
+	text-align: center;
+	box-shadow: 0px 1px 1px rgba(0, 30, 60, 1);
+}
+#frmrenewpass #container,
+.forgetpass #form #container{
+	position: absolute;
+	top: 60px;
+	right: 5px;
+	bottom: 5px;
+	left: 5px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+#frmrenewpass #container::-webkit-scrollbar,
+.forgetpass #form #container::-webkit-scrollbar{
+	display: none;
+}
+
+#frmrenewpass table,
+.forgetpass table{
+	direction: rtl;
+	width: 100%;
+	font: bold 18px mitra;
+	color: rgba(0, 100, 180, 1);
+	direction: ltr;
+	text-align: center;
+ }
+#frmrenewpass table td,
+.forgetpass table td{
+	height: 35px;
+}
+#frmrenewpass table td .input,
+.forgetpass table td .input{
+	margin: 7px;
+}
+#frmrenewpass table td #btnupdate,
+.forgetpass table td #btnrenew{
+	width: 100%;
+	text-align: center;
+	font-size: 25px;
+	margin-bottom: 10px;
+}
+#frmrenewpass table td #btnupdate{
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+#frmrenewpass table td #btnupdate:before,
+.forgetpass table td #btnrenew:before{
+	box-shadow: 0px 0px 3px rgba(235, 85, 5, 1);
+}
+
+.forgetpass table td #btnrecaptcha{
+	width: 50px;
+	height: 50px;
+	background-color: rgba(0, 60, 170, 1);
+}
+.forgetpass table td #btnrecaptcha:before{
+	content: "\f0e2";
+}
+
+/*
+// Sign Up Page Styles --------------------------------------------------
+*/
+.signup{
+	direction: rtl;
+	padding: 10px 90px 0px 90px;
+	font: bold 22px mitra;
+	color: rgba(0, 100, 180, 1);
+	text-align: justify;
+}
+.signup #separator{
+	width: 100%;
+	outline: none;
+	border: none;
+	padding: 0px;
+	border-bottom: 1px solid rgba(0, 100, 180, 0);
+	box-shadow: 0px 0px 3px 1px rgba(0, 100, 180, 1);
+}
+.signup .title{
+	font: bold 22px mitra;
+	color: rgba(235, 85, 5, 1);
+}
+.signup .act{
+	font: bold 18px nazanin;
+	color: rgba(0, 70, 160 1);
+}
+
+.signup .act span hr{
+	bottom: -1px;
+}
+
+.signup table{
+	direction: rtl;
+	width: 100%;
+	font: bold 18px mitra;
+	color: rgba(0, 100, 180, 1);
+}
+.signup table td{
+	border-bottom: 0px solid rgba(235, 80, 5, 1);
+	height: 45px;
+}
+.signup table td button{
+	width: 100%;
+	text-align: center;
+	font-size: 25px;
+	margin-bottom: 10px;
+	color: rgba(235, 85, 5, 1);
+}
+.signup table td #btnrecaptcha{
+	width: 50px;
+	height: 50px;
+	background-color: rgba(0, 60, 170, 1);
+}
+.signup table td #btnrecaptcha:before{
+	content: "\f0e2";
+}
+
+/*
+// Home Page Styles ----------------------------------------------------
+*/
+.rows{
+	position: relative;
+	width: 100%;
+	margin-bottom: 0px;
+}
+
+.counter-number:before{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	font: 520px icon;
+	color: rgba(0, 80, 160, 1);
+	text-shadow: 0px 0px 10px rgba(85, 50, 5, 1);
+	text-align: center;
+	content: "\f005";
+	opacity: 0.6;
+	z-index: -1;
+}
+.counter-number{
+	background-repeat: no-repeat;
+	background-position: -100%;
+	font: bold 200px titr;
+	color: rgba(235, 85, 5, 1);
+	text-shadow: 0px 0px 10px rgba(85, 50, 5, 1);
+	text-align: center;
+	padding-top: 7%;
+	margin-top: 3%;
+}
+.counter-text{
+	height: 30%;
+	font: bold 100px nazanin;
+	text-align: center;
+	color: rgba(235, 85, 5, 1);
+	text-shadow: 0px 0px 7px rgba(85, 50, 5, 1);
+}
+.counter-subtext{
+	height: 30%;
+	font: bold 50px nazanin;
+	text-align: center;
+	color: rgba(0, 80, 160, 1);
+	text-shadow: 0px 0px 7px rgba(85, 50, 5, 1);
+	opacity: 0.7;
+	margin-top: 10px;
+}
+.counter-sutext{
+	height: 30%;
+	font: bold 50px nazanin;
+	text-align: center;
+	color: rgba(235, 150, 50, 1);
+	text-shadow: 0px 0px 7px rgba(85, 50, 5, 1);
+}
+
+/*
+// Laws Page Styles -----------------------------------------------------
+*/
+.laws{
+	direction: rtl;
+	padding: 10px 30px 0px 30px;
+	font: bold 22px mitra;
+	color: rgba(0, 100, 180, 1);
+	text-align: justify;
+}
+.laws #separator{
+	width: 100%;
+	outline: none;
+	border: none;
+	padding: 0px;
+	border-bottom: 1px solid rgba(0, 100, 180, 0);
+	box-shadow: 0px 0px 3px 1px rgba(0, 100, 180, 1);
+}
+.laws .number{
+	font: bold 22px mitra;
+	color: rgba(235, 185, 50, 1);
+}
+.laws .act{
+	font: bold 20px nazanin;
+	color: rgba(0, 70, 160 1);
+}
+.laws table{
+	direction: rtl;
+	width: 100%;
+	font: bold 20px nazanin;
+	color: rgba(0, 100, 180, 1);
+}
+.laws table td{
+	border-bottom: 0px solid rgba(235, 80, 5, 1);
+	height: 45px;
+}
+
+/*
+// About Page Styles ----------------------------------------------------
+*/
+.about{
+	direction: rtl;
+	padding: 10px 30px 0px 30px;
+	font: bold 22px mitra;
+	color: rgba(0, 100, 180, 1);
+	text-align: justify;
+}
+.about #separator{
+	width: 100%;
+	outline: none;
+	border: none;
+	padding: 0px;
+	border-bottom: 1px solid rgba(0, 100, 180, 0);
+	box-shadow: 0px 0px 3px 1px rgba(0, 100, 180, 1);
+}
+.about table{
+	direction: rtl;
+	width: 100%;
+	font: bold 20px nazanin;
+	color: rgba(0, 100, 180, 1);
+}
+.about table td{
+	border-bottom: 0px solid rgba(235, 80, 5, 1);
+	height: 45px;
+}
+
+/*
+// Factor Page Styles --------------------------------------------------
+*/
+.factor{
+	direction: rtl;
+	padding: 10px 30px 0px 30px;
+	font: bold 22px mitra;
+	color: rgba(0, 100, 180, 1);
+	text-align: justify;
+}
+.factor #separator{
+	width: 100%;
+	height: 0px;
+	outline: none;
+	border: none;
+	padding: 0px;
+	border-bottom: 1px solid rgba(0, 100, 180, 0);
+	box-shadow: 0px 0px 3px 1px rgba(0, 100, 180, 1);
+}
+.factor table{
+	direction: rtl;
+	width: 100%;
+	font: bold 20px nazanin;
+	color: rgba(0, 100, 180, 1);
+	text-align: center;
+}
+.factor table td{
+	border-bottom: 0px solid rgba(235, 80, 5, 1);
+	height: 45px;
+}
+.factor table .title{
+	text-align: right;
+	color: rgba(235, 85, 5, 1);
+	text-shadow: 0px 0px 1px rgba(0, 0, 0, 1);
+	padding-right: 15px;
+}
+.factor table .code{
+	font: bold 18px impact;
+	color: rgba(235, 85, 5, 1);
+}
+.factor table td .neg-icon:before{
+	content: "\f00d";
+}
+.factor #btnpayshopping,
+.factor #btnacceptshopping{
+	width: 250px;
+	left: 0px;
+	text-align: center;
+	box-shadow: 0px 0px 3px rgba(235, 85, 5, 1);
+	border-radius: 5px;
+}
+.factor #btnpayshopping:before,
+.factor #btnacceptshopping:before{
+	border-radius: 5px;
+}
+.factor #btnpayshopping:hover,
+.factor #btnacceptshopping:hover{
+	color: rgba(0, 60, 170, 1);
+}
+
+/*
+// Tariff Page Styles --------------------------------------------------
+*/
+.tariff{
+	text-align: center;
+}
+.tariff .btnplan{
+	position: relative;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	margin: 10px;
+	padding: 2px 2px;
+	width: 300px;
+	height: 200px;
+	background-color: white;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: top center;
+	overflow: hidden;
+	box-shadow: 0px 0px 7px rgba(0, 0, 0, 1);
+	font: 32px titr;
+	color: rgba(0, 60, 170, 0.1);
+}
+.tariff .btnplan:hover{
+	color: rgba(245, 245, 245, 1);
+	text-shadow: 1px 1px 3px rgba(0, 60, 170, 1);
+}
+.tariff .btnplan:before{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-color: rgba(0, 70, 160, 0.5);
+	content: '';
+}
+.tariff .btnplan:hover:before{
+	display: none;
+}
+.tariff .btnplan #price{
+	position: absolute;
+	padding: 0px;
+	margin: 5px;
+	width: 100px;
+	height: 35px;
+	bottom: 0px;
+	right: 0px;
+	text-align: right;
+	font: bold 20px titr;
+	color: rgba(255, 0, 0, 1);
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+}
+.tariff .btnplan #off{
+	position: absolute;
+	padding: 0px;
+	margin: 5px;
+	width: 100px;
+	height: 100px;
+	top: 0px;
+	left: 0px;
+	text-align: center;
+	font: bold 50px titr;
+	color: rgba(255, 0, 0, 1);
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+	border: 8px solid rgba(255, 0, 0, 1);
+	border-radius: 50%;
+	box-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+	transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+}
+.tariff .btnplan:hover #off,
+.tariff .btnplan:hover #price{
+	opacity: 0.25;
+}
+
+/*
+// Templates Page Styles -------------------------------------------------------------------
+*/
+
+
+/*
+// Frequently Asked Questions Page Styles --------------------------------------------------
+*/
+div[type="faq"]{
+	direction: rtl;
+	padding: 25px 20px 0px 20px;
+	font-family: mitra;
+	font-weight: bold;
+	font-size: 22px;
+	color: rgba(0, 100, 180, 1);
+}
+
+div[type="faq"] hr{
+	width: 100%;
+	outline: none;
+	border: none;
+	padding: 0px;
+	margin-top: 15px;
+	border-bottom: 1px solid rgba(0, 100, 180, 0);
+	box-shadow: 0px 0px 3px 1px rgba(0, 100, 180, 1);
+}
+div[type="faq"] table{
+	width: 100%;
+}
+div[type="faq"] table td[type="question"]{
+	font-family: mitra;
+	font-weight: bold;
+	font-size: 22px;
+	color: rgba(235, 85, 5, 1);
+}
+div[type="faq"] table td[type="answer"]{
+	font-family: nazanin;
+	font-weight: bold;
+	font-size: 18px;
+	text-align: justify;
+	color: rgba(235, 150, 50, 1);
+	padding-bottom: 30px;
+	padding-right: 20px;
+}
+
+/*
+// News Page Styles ------------------------------------------------------------------------
+*/
+.news{
+	direction: rtl;
+	padding: 25px 20px 0px 20px;
+	font-family: mitra;
+	font-weight: bold;
+	font-size: 22px;
+	color: rgba(0, 100, 180, 1);
+}
+.news hr{
+	width: 100%;
+	outline: none;
+	border: none;
+	padding: 0px;
+	margin-top: 0px;
+	border-bottom: 1px solid rgba(0, 100, 180, 0);
+	box-shadow: 0px 0px 3px 1px rgba(0, 100, 180, 1);
+}
+.news table{
+	width: 100%;
+}
+.news table .title{
+	font-family: mitra;
+	font-weight: bold;
+	font-size: 22px;
+	color: rgba(235, 85, 5, 1);
+}
+.news table .date{
+	color: rgba(0, 60, 170, 0.7);
+	font: bold italic 15px mitra;
+}
+.news table .preview,
+.news table .text{
+	font-family: nazanin;
+	font-weight: bold;
+	font-size: 18px;
+	text-align: justify;
+	color: rgba(235, 150, 50, 1);
+	padding-bottom: 30px;
+	padding-right: 20px;
+	transition: 250ms;
+	-webkit-transition: 250ms;
+}
+
+/*
+// Contact Page Styles --------------------------------------------------
+*/
+.contact{
+	position: absolute;
+	direction: rtl;
+	width: 100%;
+	top: 0px;
+	bottom: 0px;
+}
+.contact input{
+	color: rgba(0, 100, 180, 1);
+	border-bottom: 1px solid rgba(0, 100, 180, 1);
+}
+.contact input + hr{
+	color: rgba(0, 100, 180, 1);
+	border-bottom: 2px solid rgba(235, 85, 5, 1);
+}
+.contact table{
+	width: 100%;
+	height: 100%;
+	padding: 15px 75px;
+	color: rgba(235, 150, 50, 1);
+	font-family: mitra;
+	font-size: 18px;
+	font-weight: bold;
+}
+.contact table #btnsubmit{
+	position: relative;
+	border: none;
+	outline: none;
+	width: 100%;
+	height: 50px;
+	cursor: pointer;
+	font-size: 18px;
+	font-family: titr;
+	font-weight: bold;
+	color: rgba(0, 60, 170, 1);
+	text-shadow: 0px 0px 25px rgba(0, 30, 90, 1);
+	text-align: center;
+	background-color: transparent;
+	border-radius: 0px 10px;
+	transition: 200ms ease;
+	-moz-transition: 200ms ease;
+	-webkit-transition: 200ms ease;
+ }
+.contact table td{
+	padding: 0px 35px;
+	height: 35px;
+	vertical-align: top;
+}
+.contact table .title{
+	padding: 0px 15px;
+	font-family: titr;
+	font-size: 30px;
+	font-weight: bold;
+	color: rgba(0, 120, 180, 1);
+	text-shadow: 0px 0px 2px rgba(20, 50, 120, 1);
+	text-align: center;
+}
+.contact table .title hr{
+	width: 100%;
+	outline: none;
+	border: none;
+	padding: 0px;
+	border-bottom: 1px solid rgba(0, 100, 180, 0);
+	box-shadow: 0px 0px 3px 1px rgba(0, 100, 180, 1);
+}
+.contact table .data{
+	float: left;
+	padding-left: 25px;
+}
+.contact table .name,
+.contact table .mail{
+
+}
+.contact table .name input,
+.contact table .mail input{
+	font: bold 16px nazanin;
+	color: rgba(0, 100, 180, 1);
+}
+.contact table .message textarea{
+	width: 100%;
+	height: 95%;
+	resize: none;
+	border-radius: 5px;
+	font: bold 16px nazanin;
+	color: rgba(0, 100, 180, 1);
+	background-color: transparent;
+	border-color: rgba(0, 100, 180, 1);
+}
+.contact table .message textarea:focus{
+	outline: none;
+	border: 1px solid rgba(235, 85, 5, 1);
+}
+textarea::-webkit-input-placeholder{
+	color: rgba(235, 85, 5, 1);
+}
+.contact table .submit button{
+	color: rgba(0, 100, 180, 1);
+}
+
+.contact table #btnrecaptcha{
+	background-color: rgba(0, 60, 170, 1);
+	border-radius: 0px;
+}
+.contact table #btnrecaptcha:before{
+	content: "\f0e2";
+}
+.aparaticon:before{
+	font: 35px icon;
+	content: "\f00f";
+	color: rgba(235, 85, 5, 1);
+}
+.telegramicon:before{
+	font: 27px icon;
+	content: "\f1d8";
+	color: rgba(235, 85, 5, 1);
+}
+.instagramicon:before{
+	font: 31px icon;
+	content: "\f16d";
+	color: rgba(235, 85, 5, 1);
+}
+.addressicon:before{
+	font: 26px icon;
+	content: "\f0be";
+	color: rgba(235, 85, 5, 1);
+}
+.phoneicon:before{
+	font: bold 27px icon;
+	content: "\f098";
+	color: rgba(235, 85, 5, 1);
+}
+.mailicon:before{
+	font: bold 27px icon;
+	content: "\f1df";
+	color: rgba(235, 85, 5, 1);
+}
