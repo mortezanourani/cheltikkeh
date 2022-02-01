@@ -1,83 +1,90 @@
 <?php
 	
-	/* 
-	Define all addresses in " includes " folder
+	/*
+	Database Connection Informations
 	*/
-	
-	if( !defined( 'ROOT' ) )
-		define( 'ROOT', dirname( __FILE__ ) );
-	
-	/* Define Core address */
-	if( !defined( 'CORE' ) )
-		define( 'CORE', ROOT. '/ct_core');
-	
-	/* Define includes address */
-	if( !defined( 'INCLUDES' ) )
-		define( 'INCLUDES', ROOT. '/includes');
-	
-	/* Define functions address */
-	if( !defined( 'FUNCTIONS' ) )
-		define( 'FUNCTIONS', INCLUDES. '/functions');
 
-	/* Define themes address */
-	if( !defined( 'THEMES' ) )
-		define( 'THEMES', INCLUDES. '/themes');
-
-	/* 
-	MySQL settings - You can get this info from your web host
-	*/
-	
 	/* The name of the database for ChelTikkeh */
 	if( !defined( 'DB_NAME' ) )
-		define('DB_NAME', '');
-
+		define( 'DB_NAME', '' );
+	
 	/* MySQL database username */
 	if( !defined( 'DB_USER' ) )
-		define('DB_USER', '');
+		define( 'DB_USER', '' );
 
 	/* MySQL database password */
 	if( !defined( 'DB_PASS' ) )
-		define('DB_PASS', '');
+		define( 'DB_PASS', '' ); 
 
 	/* MySQL hostname */
 	if( !defined( 'DB_HOST' ) )
-		define('DB_HOST', '127.0.0.1:3306');
+		define( 'DB_HOST', '127.0.0.1:3306' );
 
 	/* Database Charset to use in creating database tables */
 	if( !defined( 'DB_CHARSET' ) )
-		define('DB_CHARSET', 'utf8');
+		define( 'DB_CHARSET', 'utf8' );
 
 	/* The Database Collate type */
 	if( !defined( 'DB_COLLATE' ) )
-		define('DB_COLLATE', '');
-
-	/* LOAD ChELTIKKEH CORE */
-	/* Load functions */
-	if( defined( 'CORE' ) && file_exists( CORE. '/php_functions/cheltikkeh.php' ) ){
-		/* Call ChelTikkeh (CT) main functions */
-		if( !function_exists( 'get_site_db' ) )
-			require( CORE. '/php_functions/cheltikkeh.php' );
-		
-		/* Call database functions */
-		if( !function_exists( 'connect' ) )
-			require( CORE. '/php_functions/database.php' );
-
-		/* Call themes functions */
-		if( !function_exists( 'get_selected_theme' ) )
-			require( CORE. '/php_functions/themes.php' );
-		
-		/* Call SESSION functions */
-		if( !function_exists( 'is_online' ) )
-			require( CORE. '/php_functions/session.php' );
-		
-	}
+		define( 'DB_COLLATE', '' );
 	
-	/* Define selected theme address */
-	if( !defined( 'THEME' ) )
-		define( 'THEME', get_selected_theme() );
-
-	/* Define theme directories */
-	if( !defined( 'THEME_DIR' ) )
-		define( 'THEME_DIR', THEMES. '/'. THEME );
 	
+	
+	/* Bank Account Identification Data */
+	if( !defined( 'BANK_ID' ) )
+		define( 'BANK_ID', '' );
+	
+	if( !defined( 'BANK_SEND_URL' ) )
+		define( 'BANK_SEND_URL', '' );
+	
+	if( !defined( 'BANK_GATE_URL' ) )
+		define( 'BANK_GATE_URL', '' );
+	
+	if( !defined( 'BANK_VERIFY_URL' ) )
+		define( 'BANK_VERIFY_URL', '' );
+	
+	if( !defined( 'BANK_CALLBACK_URL' ) )
+		define( 'BANK_CALLBACK_URL', 'http://cheltikkeh.com/' );
+	
+	
+	
+	/* Mail Service Setup Data */
+	if( !defined( 'MAIL_HOST' ) )
+		define( 'MAIL_HOST', 'mail.cheltikkeh.com' );
+	
+	if( !defined( 'MAIL_USERNAME' ) )
+		define( 'MAIL_USERNAME', 'support' );
+	
+	if( !defined( 'MAIL_PASSWORD' ) )
+		define( 'MAIL_PASSWORD', '' );
+	
+	if( !defined( 'MAIL_REPLY_TO' ) )
+		define( 'MAIL_REPLY_TO', 'support@cheltikkeh.com' );
+	
+	if( !defined( 'MAIL_SET_FORM_MAIL' ) )
+		define( 'MAIL_SET_FORM_MAIL', 'support@cheltikkeh.com' );
+	
+	if( !defined( 'MAIL_SET_FORM_TITLE' ) )
+		define( 'MAIL_SET_FORM_TITLE', 'پشتیبانی سامانه چل تیکه' );
+	
+	if( !defined( 'MAIL_CHARSET' ) )
+		define( 'MAIL_CHARSET', 'UTF-8' );
+	
+	if( !defined( 'MAIL_CONTENT_TYPE' ) )
+		define( 'MAIL_CONTENT_TYPE', 'text/html' );
+	
+	
+	
+	/*
+	Kernel and API Physical Path
+	*/
+	
+	/* Kernel Physical Path */
+	define( 'KERNEL', ROOT. '/kernel' );
+	
+	/* API Physical Path */
+	define( 'API', ROOT. '/api' );
+	
+	/* Themes Physical Path */
+	define( 'THEMES', ROOT. '/themes' );
 	
